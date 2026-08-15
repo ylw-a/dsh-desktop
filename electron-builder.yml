@@ -1,0 +1,32 @@
+appId: com.deepseek.harness.desktop
+productName: DeepSeek Harness Desktop
+asar: false
+compression: normal
+directories:
+  output: dist
+  buildResources: build
+files:
+  - "main.js"
+  - "package.json"
+extraResources:
+  - from: runtime
+    to: runtime
+    filter:
+      - "**/*"
+      - "!**/install.log"
+win:
+  target:
+    - target: portable
+    - target: nsis
+  executableName: DeepSeekHarness
+  icon: build/icon.ico
+nsis:
+  oneClick: false
+  perMachine: false
+  allowToChangeInstallationDirectory: true
+  createDesktopShortcut: true
+  createStartMenuShortcut: true
+  shortcutName: DeepSeek Harness
+  artifactName: ${productName}-Setup-${version}.${ext}
+portable:
+  artifactName: ${productName}-Portable-${version}.${ext}

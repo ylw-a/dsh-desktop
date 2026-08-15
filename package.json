@@ -1,0 +1,20 @@
+{
+  "name": "dsh-desktop",
+  "version": "0.1.0",
+  "description": "DeepSeek Harness Desktop — a self-contained Windows desktop wrapper for the DeepSeek Harness web UI.",
+  "main": "main.js",
+  "author": "DeepSeek Harness Desktop",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder --win",
+    "dist:portable": "electron-builder --win portable",
+    "dist:nsis": "electron-builder --win nsis"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "electron": "^33.0.0",
+    "electron-builder": "^25.1.8"
+  }
+}

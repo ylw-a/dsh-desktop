@@ -1,0 +1,7 @@
+node_modules/
+dist/
+install.log
+*.log
+
+# 独立 Node 运行时（83MB 二进制，构建前从系统 Node 复制一份即可，不入库）
+runtime/node.exe

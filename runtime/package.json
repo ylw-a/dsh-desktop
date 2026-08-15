@@ -1,0 +1,9 @@
+{
+  "name": "dsh-runtime",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Bundled runtime for the DeepSeek Harness desktop app: the dsh CLI and its full production dependency tree (including peer dependencies that electron-builder otherwise drops).",
+  "dependencies": {
+    "@deepseek-ai/dsh": "0.1.0-rc.6"
+  }
+}
